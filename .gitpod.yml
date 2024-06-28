@@ -14,7 +14,7 @@ tasks:
   - command: |
       # Activate the desired environment
       source /home/gitpod/.bashrc
-      conda activate single_cell_analysis_06-2024
+      source activate single_cell_analysis_06-2024
 
 vscode:
   extensions:
