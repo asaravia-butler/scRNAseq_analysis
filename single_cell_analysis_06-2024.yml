@@ -26,6 +26,7 @@ dependencies:
   - scrapy
   - beautifulsoup4
   - hdf5
+  - h5py
   - jupyterlab
   - bash_kernel
   - ipykernel
