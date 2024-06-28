@@ -1,0 +1,26 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: |
+
+      # Update conda and initialize
+      conda update -n base -c defaults conda -y
+      conda init bash
+
+      # Create conda environments
+      conda env create -f single_cell_analysis_06-2024.yml
+
+  - command: |
+      # Activate the desired environment
+      source /home/gitpod/.bashrc
+      conda activate single_cell_analysis_06-2024
+
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-toolsai.jupyter
+
+ports:
+  - port: 8888
+    onOpen: open-browser
