@@ -11,10 +11,17 @@ tasks:
       # Create conda environments
       conda env create -f single_cell_analysis_06-2024.yml
 
+      # Enable Jupyter permissions
+      mkdir -p ~/.jupyter
+      echo "c.ServerApp.allow_remote_access = True" >> ~/.jupyter/jupyter_server_config.py
+      echo "c.ServerApp.allow_origin = '*'" >> ~/.jupyter/jupyter_server_config.py
+      echo "c.ServerApp.trust_xheaders = True" >> ~/.jupyter/jupyter_server_config.py
+
   - command: |
       # Activate the desired environment
       source /home/gitpod/.bashrc
       source activate single_cell_analysis_06-2024
+      jupyter lab --ip=0.0.0.0 --allow-root --no-browser
 
 vscode:
   extensions:
