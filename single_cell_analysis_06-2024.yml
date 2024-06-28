@@ -1,0 +1,36 @@
+name: single_cell_analysis_06-2024
+channels: 
+  - bioconda # required for scanpy and gseapy
+  - conda-forge
+  - defaults
+  - r
+
+dependencies:
+  - python
+  - pandas
+  - numpy
+  - matplotlib
+  - gseapy
+  - scanpy
+  - seaborn
+  - openpyxl
+  - harmonypy
+  - scikit-misc
+  - leidenalg
+  - matplotlib-venn
+  - tensorflow
+  - scipy
+  - keras
+  - scikit-learn
+  - pytorch
+  - scrapy
+  - beautifulsoup4
+  - hdf5
+  - jupyterlab
+  - bash_kernel
+  - ipykernel
+  - r-irkernel
+  - r-base
+  - pip
+  - pip: 
+    - git+https://github.com/LucasESBS/scoreCT
