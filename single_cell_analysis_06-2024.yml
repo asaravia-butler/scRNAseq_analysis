@@ -11,7 +11,7 @@ dependencies:
   - numpy
   - matplotlib
   - gseapy
-  - scanpy
+  - scanpy=1.8.1
   - seaborn
   - openpyxl
   - harmonypy
