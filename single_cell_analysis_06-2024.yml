@@ -25,7 +25,6 @@ dependencies:
   - pytorch
   - scrapy
   - beautifulsoup4
-  - hdf5
   - jupyterlab
   - bash_kernel
   - ipykernel
@@ -36,5 +35,4 @@ dependencies:
   - pip
   - pip: 
     - git+https://github.com/LucasESBS/scoreCT
-  - pip:
-    - h5py
+
