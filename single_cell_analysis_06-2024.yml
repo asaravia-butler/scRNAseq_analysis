@@ -1,7 +1,7 @@
 name: single_cell_analysis_06-2024
 channels: 
-  - bioconda # required for scanpy and gseapy
   - conda-forge
+  - bioconda
   - defaults
   - r
 
