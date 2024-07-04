@@ -20,9 +20,9 @@ tasks:
   - command: |
       # Activate the desired environment
       source /home/gitpod/.bashrc
-      source activate single_cell_analysis_06-2024
+      source activate /home/gitpod/miniconda3/envs/single_cell_analysis_06-2024
       # Start Jupyter Lab
-      jupyter lab --ip=0.0.0.0 --allow-root --no-browser
+      jupyter lab --ip=0.0.0.0 --allow-root
 
 vscode:
   extensions:
