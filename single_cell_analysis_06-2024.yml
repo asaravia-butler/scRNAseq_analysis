@@ -6,12 +6,12 @@ channels:
   - r
 
 dependencies:
-  - python>=3.10
+  - python>=3.11
   - pandas
   - numpy
   - matplotlib
   - gseapy
-  - scanpy=1.8.1
+  - scanpy
   - seaborn
   - openpyxl
   - harmonypy
@@ -26,7 +26,6 @@ dependencies:
   - scrapy
   - beautifulsoup4
   - hdf5
-  - h5py
   - jupyterlab
   - bash_kernel
   - ipykernel
@@ -37,3 +36,5 @@ dependencies:
   - pip
   - pip: 
     - git+https://github.com/LucasESBS/scoreCT
+  - pip:
+    - h5py
