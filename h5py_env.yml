@@ -1,11 +1,14 @@
-name: h5py_hdf5_env
+name: h5py_env
 channels: 
   - conda-forge
   - defaults
-  - r
 
 dependencies:
   - python>=3.11
   - h5py
-  - hdf5
+  - scipy
   - jupyterlab
+  - ipykernel
+  - pip
+  - pip:
+    - ipython
