@@ -21,8 +21,8 @@ tasks:
       # Activate the desired environment
       source /home/gitpod/.bashrc
       # Create conda environments
-      conda env create -f single_cell_analysis_06-2024.yml
-      source activate /home/gitpod/miniconda3/envs/single_cell_analysis_06-2024
+      #conda env create -f single_cell_analysis_06-2024.yml
+      source activate single_cell_analysis_06-2024
       # Start Jupyter Lab
       jupyter lab --ip=0.0.0.0 --allow-root
 
