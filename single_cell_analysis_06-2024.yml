@@ -32,6 +32,7 @@ dependencies:
   - ipykernel
   - r-irkernel
   - r-base
+  - asttokens
   - pip
   - pip: 
     - git+https://github.com/LucasESBS/scoreCT
