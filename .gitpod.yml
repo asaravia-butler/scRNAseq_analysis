@@ -21,7 +21,8 @@ tasks:
       # Activate the desired environment
       source /home/gitpod/.bashrc
       source activate single_cell_analysis_06-2024
-      #jupyter lab --ip=0.0.0.0 --allow-root --no-browser
+      # Start Jupyter Lab
+      jupyter lab --ip=0.0.0.0 --allow-root --no-browser
 
 vscode:
   extensions:
