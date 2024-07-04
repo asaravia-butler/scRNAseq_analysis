@@ -10,6 +10,7 @@ tasks:
 
       # Create conda environments
       conda env create -f single_cell_analysis_06-2024.yml
+      conda env create -f h5py_env.yml
 
       # Enable Jupyter permissions
       mkdir -p ~/.jupyter
