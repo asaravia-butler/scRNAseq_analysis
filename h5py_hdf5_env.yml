@@ -1,0 +1,11 @@
+name: h5py_hdf5_env
+channels: 
+  - conda-forge
+  - defaults
+  - r
+
+dependencies:
+  - python>=3.11
+  - h5py
+  - hdf5
+  - jupyterlab
