@@ -36,35 +36,35 @@ single_cell_analysis_06-2024     /home/gitpod/miniconda3/envs/single_cell_analys
 
 1. Download example h5 file and respective metadata from [OSD-352](https://osdr.nasa.gov/bio/repo/data/studies/OSD-352), which was generated using the [10X multiome kit](https://www.10xgenomics.com/products/single-cell-multiome-atac-plus-gene-expression) and processed using [Cell Ranger ARC 2.0.0](https://www.10xgenomics.com/support/software/cell-ranger-arc/latest):
 
-```bash
-## Download h5 file then rename ##
-wget https://osdr.nasa.gov/geode-py/ws/studies/OSD-352/download?file=GLDS-352_snRNA-Seq_filtered_feature_bc_matrix.h5&version=1
-mv 'download?file=GLDS-352_snRNA-Seq_filtered_feature_bc_matrix.h5' GLDS-352_snRNA-Seq_filtered_feature_bc_matrix.h5
+    ```bash
+    ## Download h5 file then rename ##
+    wget https://osdr.nasa.gov/geode-py/ws/studies/OSD-352/download?file=GLDS-352_snRNA-Seq_filtered_feature_bc_matrix.h5&version=1
+    mv 'download?file=GLDS-352_snRNA-Seq_filtered_feature_bc_matrix.h5' GLDS-352_snRNA-Seq_filtered_feature_bc_matrix.h5
 
-## Download per barcode matrics metadata for each sample then rename ##
-wget https://osdr.nasa.gov/geode-py/ws/studies/OSD-352/download?file=GLDS-352_snATAC-Seq_CF1_per_barcode_metrics.csv&version=1
-mv 'download?file=GLDS-352_snATAC-Seq_CF1_per_barcode_metrics.csv' CF1_per_barcode_metrics.csv
-wget https://osdr.nasa.gov/geode-py/ws/studies/OSD-352/download?file=GLDS-352_snATAC-Seq_CF2_per_barcode_metrics.csv&version=1
-mv 'download?file=GLDS-352_snATAC-Seq_CF2_per_barcode_metrics.csv' CF2_per_barcode_metrics.csv
-wget https://osdr.nasa.gov/geode-py/ws/studies/OSD-352/download?file=GLDS-352_snATAC-Seq_CF7_per_barcode_metrics.csv&version=1
-mv 'download?file=GLDS-352_snATAC-Seq_CF7_per_barcode_metrics.csv' CF7_per_barcode_metrics.csv
-wget https://osdr.nasa.gov/geode-py/ws/studies/OSD-352/download?file=GLDS-352_snATAC-Seq_CG8_per_barcode_metrics.csv&version=1
-mv 'download?file=GLDS-352_snATAC-Seq_CG8_per_barcode_metrics.csv' CG8_per_barcode_metrics.csv
-wget https://osdr.nasa.gov/geode-py/ws/studies/OSD-352/download?file=GLDS-352_snATAC-Seq_CG9_per_barcode_metrics.csv&version=1
-mv 'download?file=GLDS-352_snATAC-Seq_CG9_per_barcode_metrics.csv' CG9_per_barcode_metrics.csv
-```
+    ## Download per barcode matrics metadata for each sample then rename ##
+    wget https://osdr.nasa.gov/geode-py/ws/studies/OSD-352/download?file=GLDS-352_snATAC-Seq_CF1_per_barcode_metrics.csv&version=1
+    mv 'download?file=GLDS-352_snATAC-Seq_CF1_per_barcode_metrics.csv' CF1_per_barcode_metrics.csv
+    wget https://osdr.nasa.gov/geode-py/ws/studies/OSD-352/download?file=GLDS-352_snATAC-Seq_CF2_per_barcode_metrics.csv&version=1
+    mv 'download?file=GLDS-352_snATAC-Seq_CF2_per_barcode_metrics.csv' CF2_per_barcode_metrics.csv
+    wget https://osdr.nasa.gov/geode-py/ws/studies/OSD-352/download?file=GLDS-352_snATAC-Seq_CF7_per_barcode_metrics.csv&version=1
+    mv 'download?file=GLDS-352_snATAC-Seq_CF7_per_barcode_metrics.csv' CF7_per_barcode_metrics.csv
+    wget https://osdr.nasa.gov/geode-py/ws/studies/OSD-352/download?file=GLDS-352_snATAC-Seq_CG8_per_barcode_metrics.csv&version=1
+    mv 'download?file=GLDS-352_snATAC-Seq_CG8_per_barcode_metrics.csv' CG8_per_barcode_metrics.csv
+    wget https://osdr.nasa.gov/geode-py/ws/studies/OSD-352/download?file=GLDS-352_snATAC-Seq_CG9_per_barcode_metrics.csv&version=1
+    mv 'download?file=GLDS-352_snATAC-Seq_CG9_per_barcode_metrics.csv' CG9_per_barcode_metrics.csv
+    ```
 
 2. Run the following command to activate the h5py environment:
-`source activate h5py_env`
+    `source activate h5py_env`
 
 3. Run the following command to start a jupyter lab environment:
-`jupyter lab --ip=0.0.0.0 --allow-root`
+    `jupyter lab --ip=0.0.0.0 --allow-root`
 
-A window will open to connect to a Jupyter Lab server, which will require a Token.
-You can find your token by looking at the terminal of your gitpod environment.
-Example:
-`http://asaraviabut-scrnaseqana-dmzy6mpvp3j:8888/lab?token=53b9bd94fc09e2f4e64a8f94fa81d1edfc1ee904330ba46b`
-In the above example, the token is: `53b9bd94fc09e2f4e64a8f94fa81d1edfc1ee904330ba46b`
+    A window will open to connect to a Jupyter Lab server, which will require a Token.
+    You can find your token by looking at the terminal of your gitpod environment.
+    Example:
+    `http://asaraviabut-scrnaseqana-dmzy6mpvp3j:8888/lab?token=53b9bd94fc09e2f4e64a8f94fa81d1edfc1ee904330ba46b`
+    In the above example, the token is: `53b9bd94fc09e2f4e64a8f94fa81d1edfc1ee904330ba46b`
 
 4. Double click on the `CellRanger_Extract_h5.ipynb` file to open a Jupyter Notebook with commands to extract the `barcodes.tsv`, `features.tsv`, and `matrix.mtx` files containing the single cell (or nuclei) gene expression data from each sample.  
 
