@@ -55,18 +55,22 @@ single_cell_analysis_06-2024     /home/gitpod/miniconda3/envs/single_cell_analys
     ```
 
 2. Run the following command to activate the h5py environment:
-    `source activate h5py_env`
+    ```bash
+    source activate h5py_env
+    ```
 
-3. Run the following command to start a jupyter lab environment:
-    `jupyter lab --ip=0.0.0.0 --allow-root`
+4. Run the following command to start a jupyter lab environment:
+    ```bash
+    jupyter lab --ip=0.0.0.0 --allow-root
+    ```
 
     A window will open to connect to a Jupyter Lab server, which will require a Token.
-    You can find your token by looking at the terminal of your gitpod environment.
-    Example:
-    `http://asaraviabut-scrnaseqana-dmzy6mpvp3j:8888/lab?token=53b9bd94fc09e2f4e64a8f94fa81d1edfc1ee904330ba46b`
+    You can find your token by looking at the terminal of your gitpod environment.  
+    Example:  
+    `http://asaraviabut-scrnaseqana-dmzy6mpvp3j:8888/lab?token=53b9bd94fc09e2f4e64a8f94fa81d1edfc1ee904330ba46b`  
     In the above example, the token is: `53b9bd94fc09e2f4e64a8f94fa81d1edfc1ee904330ba46b`
 
-4. Double click on the `CellRanger_Extract_h5.ipynb` file to open a Jupyter Notebook with commands to extract the `barcodes.tsv`, `features.tsv`, and `matrix.mtx` files containing the single cell (or nuclei) gene expression data from each sample.  
+6. Double click on the `CellRanger_Extract_h5.ipynb` file to open a Jupyter Notebook with commands to extract the `barcodes.tsv`, `features.tsv`, and `matrix.mtx` files containing the single cell (or nuclei) gene expression data from each sample.  
 
 
 #### Shut down the jupyter environment to parse an H5 file
