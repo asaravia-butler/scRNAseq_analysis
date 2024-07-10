@@ -18,7 +18,7 @@ In your active gitpod terminal, run the following command:
 conda env list
 ```
 
-Your output should look as follows:
+Your output should look as follows:  
 *Note: It could take several minutes for the conda environments to install, so keep checking periodically until they are all visible.*
 
 ```bash
