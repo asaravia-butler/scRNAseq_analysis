@@ -77,7 +77,7 @@ single_cell_analysis_06-2024     /home/gitpod/miniconda3/envs/single_cell_analys
     `http://asaraviabut-scrnaseqana-dmzy6mpvp3j:8888/lab?token=53b9bd94fc09e2f4e64a8f94fa81d1edfc1ee904330ba46b`  
     In the above example, the token is: `53b9bd94fc09e2f4e64a8f94fa81d1edfc1ee904330ba46b`
 
-6. Double click on the `CellRanger_Extract_h5.ipynb` file to open a Jupyter Notebook with commands to extract the `barcodes.tsv`, `features.tsv`, and `matrix.mtx` files containing the single cell (or nuclei) gene expression data from each sample.  
+5. Double click on the `CellRanger_Extract_h5.ipynb` file to open a Jupyter Notebook with commands to extract the `barcodes.tsv`, `features.tsv`, and `matrix.mtx` files containing the single cell (or nuclei) gene expression data from each sample.  
 
 
 #### Shut down the jupyter environment to parse an H5 file
@@ -94,5 +94,44 @@ single_cell_analysis_06-2024     /home/gitpod/miniconda3/envs/single_cell_analys
 
 ### Set up jupyter environment to perform downstream analyses and comparisons of scRNAseq count data generated from Cell Ranger and STARsolo
 
-Coming soon...
+1. Download example Cell Ranger ARC and STARsolo GEX filtered gene output files from [OSD-352](https://osdr.nasa.gov/bio/repo/data/studies/OSD-352):
+
+    ```bash
+    ## Download and uncompress output data ##
+    # Coming soon
+    ```
+
+2. Run the following command to activate the single_cell_analysis_06-2024 environment:
+    ```bash
+    source activate single_cell_analysis_06-2024
+    ```
+
+4. Run the following command to start a jupyter lab environment:
+    ```bash
+    jupyter lab --ip=0.0.0.0 --allow-root
+    ```
+
+    A window will open to connect to a Jupyter Lab server, which will require a Token.
+    You can find your token by looking at the terminal of your gitpod environment.  
+    Example:  
+    `http://asaraviabut-scrnaseqana-dmzy6mpvp3j:8888/lab?token=53b9bd94fc09e2f4e64a8f94fa81d1edfc1ee904330ba46b`  
+    In the above example, the token is: `53b9bd94fc09e2f4e64a8f94fa81d1edfc1ee904330ba46b`
+
+
+5. **To perform a comparison of Cell Ranger ARC and STARsolo output data:** Double click on the `CellRangerARC_vs_STARsolo-Gene_GLDS-352.ipynb` file to open a Jupyter Notebook with commands to compare the filtered gene output data from Cell Ranger ARC vs. STARsolo from each sample.  
+
+
+#### Shut down the jupyter environment to analyze and compare scRNAseq output data 
+
+1. Before sutting down, make sure you have downloaded any files you wish to save from the jupyter lab environment.
+  
+2. "X" out of the window containing the jupyter lab.
+
+3. Return to the window containing the gitpod environment and click `ctrl+C` then type `y` to shut down the server.
+
+4. Run the following command to deactivate the conda environment: `conda deactivate`
+
+<br>
+
+
 
