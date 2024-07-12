@@ -52,6 +52,13 @@ single_cell_analysis_06-2024     /home/gitpod/miniconda3/envs/single_cell_analys
     mv 'download?file=GLDS-352_snATAC-Seq_CG8_per_barcode_metrics.csv' CG8_per_barcode_metrics.csv
     wget https://osdr.nasa.gov/geode-py/ws/studies/OSD-352/download?file=GLDS-352_snATAC-Seq_CG9_per_barcode_metrics.csv&version=1
     mv 'download?file=GLDS-352_snATAC-Seq_CG9_per_barcode_metrics.csv' CG9_per_barcode_metrics.csv
+
+    ## Modify the well ID to match those used for each sample ##
+    sed 's/-1/-5/g' CF1_per_barcode_metrics.csv > CF1_per_barcode_metrics_wellID5.csv
+    sed 's/-1/-1/g' CF2_per_barcode_metrics.csv > CF2_per_barcode_metrics_wellID1.csv
+    sed 's/-1/-4/g' CG9_per_barcode_metrics.csv > CG9_per_barcode_metrics_wellID4.csv
+    sed 's/-1/-3/g' CG8_per_barcode_metrics.csv > CG8_per_barcode_metrics_wellID3.csv
+    sed 's/-1/-2/g' CF7_per_barcode_metrics.csv > CF7_per_barcode_metrics_wellID2.csv
     ```
 
 2. Run the following command to activate the h5py environment:
