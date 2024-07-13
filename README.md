@@ -98,7 +98,7 @@ single_cell_analysis_06-2024     /home/gitpod/miniconda3/envs/single_cell_analys
 
     ```bash
     ## Download and uncompress output data ##
-    # Coming soon
+    curl -LO https://figshare.com/ndownloader/files/47649481 && unzip 47649481 && rm 47649481
     ```
 
 2. Run the following command to activate the single_cell_analysis_06-2024 environment:
